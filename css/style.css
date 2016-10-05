@@ -218,7 +218,7 @@ div {
 }
         #apDiv23 {
 	position: absolute;
-	width: 669px;
+	width: 700px;
 	height: 51px;
 	z-index: 10;
 	left: 308px;
@@ -226,10 +226,10 @@ div {
 }
         #apDiv24 {
 	position: absolute;
-	width: 531px;
+	width: 800px;
 	height: 21px;
 	z-index: 1;
-	left: 220px;
+	left: 110px;
 	top: 142px;
 	color: #006680;
 	border-top-color: #006680;
