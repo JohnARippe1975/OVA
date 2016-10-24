@@ -399,7 +399,7 @@
 	}
 
 	.itmenu_b {
-	
+	    list-style-type: none;
 		padding: 13px 13px ;
 		background: #003f5e;
 		margin: 0px;
@@ -408,23 +408,7 @@
 		margin-top: 0px;
 	}
 
-
-	.class body nav .menu #apDiv3 form {
-		font-size: 12px;
-	}
-
-	/* fin opciones de menu*/
-	/*otras listas*/
-	ul #id_l_aut{
-
-	}
-	li #id_l_l_aut_t{
-
-	}
-
-	
-	/*CLASES*/
-	.ancho_menu_home{width: 900px;}
+ 	.ancho_menu_home{width: 900px;}
 	.ancho_menu_paginas{width: 970px;}
 	
 	.menu:link{
@@ -462,6 +446,22 @@
 	.class body section article p {
 			font-weight: bold;
 	}
+
+
+	.class body nav .menu #apDiv3 form {
+		font-size: 12px;
+	}
+
+	/* fin opciones de menu*/
+	/*otras listas*/
+	ul .clss_l_aut{
+	/**/ 	 padding-left: 1px; 
+		/**/  text-align: left; 
+		margin-left: -5px;
+	}
+	li .clss_l_aut{
+    /*  padding: 0px ; */
+	}
    
    /* configuracion texto del primer articulo */
 
@@ -485,19 +485,41 @@
 		padding: 0px 0px 0px 0px;
 	}
 
+
 	#agrupar2{
+		overflow-y: auto;
 		border-style:none;
-		height: 750px;
+		height: 900px;
 	    width: 705px;
-	
 		font-size: 20px;
 		left: 0px;
 		top: 0px;
 		padding: 0px 0px 0px 0px;
 	}
 
+	#agrupar20{
+		border-style:none;
+		height: 658px;
+	    width: 705px;
+		overflow-y: auto;
+		font-size: 20px;
+		left: 0px;
+		top: 0px;
+		padding: 0px 0px 0px 0px;
+	}
+
+	#agrupar21{
+		border-style:none;
+		height: 900px;
+	    width: 705px;
+		overflow-y: auto;
+		font-size: 20px;
+		left: 0px;
+		top: 0px;
+		padding: 0px 0px 0px 0px;
+	}
 	article.clssart1{
-		width: 228px;
+		width: 225px;
 	    border: 1px solid;
 	    float: left;
 		height: 600px;
@@ -509,16 +531,14 @@
 		clear: left;
 		width: 225px;
 	    border-top: 1px solid;
-	   /*  float: left; */
-		/* height: 600px; */
-
 	}
 
 	article.clssart3{
-		width: 228px;
+		width: 225px;
 	    border: 1px solid;
+	    padding: 0;
 	    float: left;
-		height: 600px;
+		height: 910px;
 		/* padding: 1px; */
 
 	}
