@@ -262,14 +262,14 @@
 
 	#apDiv28 {
 
-	/*position: absolute;*/
+	display: block;
 	height: 660px;
-	width: 720px;
+	width: 705px;
 	overflow-y: auto;
 	font-size: 12px;
-	/*color: #FFF;*/
 	left: 0px;
 	top: 0px;
+	margin: 0px;
 	}
 	#contenidos{
 	width: 1000px;
@@ -278,7 +278,7 @@
 	position: relative;
 	color: #000;
 	}
-	#imagen {
+	.imagenfoto{
 
 	width: 150px;
 	height:180px;
@@ -355,7 +355,7 @@
 		background: white;
 		height: 720px;
 		float: left;
-		margin-top: 7px;
+		margin: 7px 0px 0px 0px;
 		border-radius: 10px 0px 0px 0px;
 	}
 	aside{
@@ -390,12 +390,22 @@
 	.itmenu_p {
 		float: left;
 		list-style-type: none;
-		padding: 13px;
+		padding: 13px 13px ;
 		background: #003f5e;
 		margin: 3px;
 		border-radius: 7px;
 		box-shadow: inset 0px 0px 10px white;
 		margin-top: 7px;
+	}
+
+	.itmenu_b {
+	
+		padding: 13px 13px ;
+		background: #003f5e;
+		margin: 0px;
+		border-radius: 7px;
+		box-shadow: inset 0px 0px 10px white;
+		margin-top: 0px;
 	}
 
 
@@ -416,6 +426,7 @@
 	/*CLASES*/
 	.ancho_menu_home{width: 900px;}
 	.ancho_menu_paginas{width: 970px;}
+	
 	.menu:link{
 		color: #FFF;
 		text-decoration: none;
@@ -429,6 +440,21 @@
 		text-decoration: none;
 		/*text-shadow: 0 0 13px white;*/
 	}
+	.menu li:hover ul{
+		display:block;
+        position: absolute;
+        padding: 0;
+        margin:-16px;
+        margin-top:13px;
+        width: 10px;
+        float: none;
+	}
+
+	.menu  li ul {
+        display:none;
+        position:absolute;
+        min-width:130px;
+        }
 	.menu:active{
 		color: #003F5E;
 		text-decoration: none;
@@ -448,15 +474,28 @@
 		text-align: center;
 	}
 	/* Primera columna */
-	#agrupar {
-		border-style: solid;
+	#agrupar{
+		border-style:none;
 		height: 658px;
-	    width: 720px;
+	    width: 705px;
 		overflow-y: auto;
 		font-size: 20px;
 		left: 0px;
 		top: 0px;
+		padding: 0px 0px 0px 0px;
 	}
+
+	#agrupar2{
+		border-style:none;
+		height: 750px;
+	    width: 705px;
+	
+		font-size: 20px;
+		left: 0px;
+		top: 0px;
+		padding: 0px 0px 0px 0px;
+	}
+
 	article.clssart1{
 		width: 228px;
 	    border: 1px solid;
@@ -466,7 +505,7 @@
 
 	}
 /* seccion del articulo separado por linea */
-		article.clssart2{
+	article.clssart2{
 		clear: left;
 		width: 225px;
 	    border-top: 1px solid;
@@ -474,6 +513,16 @@
 		/* height: 600px; */
 
 	}
+
+	article.clssart3{
+		width: 228px;
+	    border: 1px solid;
+	    float: left;
+		height: 600px;
+		/* padding: 1px; */
+
+	}
+
 	/* los elementos de la lista que estan dentro del texto */
 	.clssart1 ul li{
 		/* Eliminamos el pequeño gráfico generado por defecto delante de cada opción del listado */
@@ -497,5 +546,19 @@
 	    /*Fondo del encabezado color crema*/
 	    background: #FFFBB9;
 		height: 70px;
+	}
+
+	.txtblanco{
+		color: white;
+		font-size: 15px
+	}
+
+	img{
+		border: 0px;
+	}
+
+	.clssart3{
+     margin: 0;
+     padding: 0;
 	}
 
