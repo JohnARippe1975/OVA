@@ -2,7 +2,7 @@
 <html lang="es" class="no-js">
     <!-- comentario  -->
     <head>
- 		<meta charset="UTF-8">
+        <meta charset="UTF-8">
         <meta content="mauricio perdomo" name="author"/>
         <meta content="Pagina de curso de Disenos de Sitios Web" name="description" />
         <meta content="EDUCACION, UNAD, INGENIERIA, SISTEMAS, DISENO, OVA, CURSO, WEB" name="keywords" />
@@ -11,49 +11,61 @@
         <link rel="stylesheet" href="css/normalize.css">
         <link href='http://fonts.googleapis.com/css?family=arial' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" href="css/style.css">
+
+           <script src="js/modernizr.js"></script>   
+    <script src="js/prefixfree.min.js"></script>
+    <script src="js/jquery-2.1.1.js"></script> 
      </head>
-    <body>	
+    <body>  
         <div id="contenidos">
             <header>
-                <div id="apDiv1"><img src="img/banner.jpg" width="1000" height="168" alt="banner">
-                    <div id="apDiv24">OVA Para curso Lógica de Programación (Código-  204022) - Tecnología en Desarrollo de Software
-                    </div>
+                <div id="apDiv1"><img src="img/banner.jpg" width="1000" height="168">
+                  <div id="apDiv24">OVA Para curso Lógica de Programación (Código-  204022) - Tecnología en Desarrollo de Software</div>
               </div>
-           
-        	     <p>&nbsp;</p>
-   			     <p>&nbsp;</p>
-                 <p>&nbsp;</p>
-             </header>
-    		
+            </header>
+              <p>&nbsp;</p>
+                <p>&nbsp;</p>
+            <p>&nbsp;</p>
             <nav>
               <ul class="menu">
                 <li class="itmenu_p"><a href="index.html" class="menu">Inicio</a></li>
-                <li class="itmenu_p"><a href="lecturas.html" class="menu">Lecturas</a></li>
-                <li class="itmenu_p"><a href="multimedia.html" class="menu">Multimedia</a></li>
-                <li class="itmenu_p"><a href="actividades.html" class="menu">Actividades</a></li>
+                <li class="itmenu_p" ><a href="lecturas.html" class="menu">Lecturas</a>
+                   <ul>
+                       <li class="itmenu_b"><a href="Lect1.html" class="menu">Unidad 1</a></li>
+                       <li class="itmenu_b"><a href="Lect2.html" class="menu">Unidad 2</a></li>
+                       <li class="itmenu_b"><a href="Lect3.html" class="menu">Unidad 3</a></li>
+                   </ul>
+                </li>
+                <li class="itmenu_p"> <a href="multimedia.html" class="menu">Multimedia</a></li>
+                <li class="itmenu_p"><a href="Act1.html" class="menu">Actividades</a>
+                    <ul>
+                       <li class="itmenu_b"><a href="Act1.html" class="menu">Actividad 1</a></li>
+                       <li class="itmenu_b"><a href="Act2.html" class="menu">Actividad 2</a></li>
+                       <li class="itmenu_b"><a href="Act3.html" class="menu">Actividad 3</a></li>
+                   </ul>
+                </li>
                 <li class="itmenu_p"><a href="autores.html" class="menu">Autores</a></li>
-              
-                 </ul>
-                       <div id="apDiv19"> 
-                 
-                            <div id="cuentavisitas">
-                                
+              </ul>
+                <div id="apDiv19">
+           
+                    <div id="cuentavisitas">
+                    
                                 <script>
-                                   yu=function(id){return document.getElementById(id);}
-                                     if(localStorage){
-                                        if(localStorage['visitas']==undefined){
-                                         localStorage['visitas']=0;
+                      yu=function(id){return document.getElementById(id);}
+                                    if(localStorage){
+                                         if(localStorage['visitas']==undefined){
+                                               localStorage['visitas']=0;
                                         }
-
-                                         var n=parseInt(localStorage['visitas']);localStorage['visitas']=1+n;
-                                         var num=localStorage['visitas'];
-                                         var mensaje=num + " visitas";
-                                     yu('cuentavisitas').innerHTML=mensaje;
-                                    }
-                                </script>
-                            </div>
+                            var n=parseInt(localStorage['visitas']);
+                            localStorage['visitas']=1+n;
+                                           var num=localStorage['visitas'];
+                                            var mensaje=num + " visitas";
+                                         yu('cuentavisitas').innerHTML=mensaje;}
+                      </script>
                      </div>
 
+                </div>
+                
                 <div id="apDiv4">
                      <a id="l1" target="_blank" rel="nofollow" href="https://www.facebook.com/Universidad-Nacional-Abierta-y-a-Distancia-UNAD-285790428108305/">
                           <img title="Facebook" src="img/facebook_aqu_32.png" alt="Facebook" />
@@ -67,10 +79,10 @@
                             <img src="img/twitter_aqu_32.png" class="menu" title="Twitter" alt="" />
                       </a>
         
-                 </div> 
-             
-                 <div id="apDiv3">    
-               	    <form method="get" action="http://www.google.es/search">
+                 </div>
+
+                  <div id="apDiv3">    
+                    <form method="get" action="http://www.google.es/search">
                         <input type="hidden" name="ie" value="UTF-8" />
                         <input type="hidden" name="oe" value="UTF-8" />
                         <input type="text" id="s" name="q" value="" size="12" />
@@ -82,22 +94,12 @@
                                <input type="radio" name="sitesearch" value="int" /> Internet
                                <input type="radio" name="sitesearch" value="https://estudios.unad.edu.co/ingenieria-de-sistemas" checked="checked" />ECBTI 
                             </div>
- 
                    </form>
                 </div>
-
-                 <div id="apDiv14">
-                   <a href="https://campus0a.unad.edu.co/campus0/login/index.php" target="_blank">
-                    <img src="img/campus.png" width="116" height="101" alt="">
-                    </a>
-                 </div>
-    
-                   <div id="apDiv20">
-        <a href="https://informacion.unad.edu.co/correo" target="_blank">
-            <img src="img/rss_aqu_32.png" class="menu" title="Correo Institucional" alt="" />
-        </a>
-    </div>
              </nav>
+            <div id="apDiv14"><a href="https://campus0a.unad.edu.co/campus0/login/index.php" target="_blank"><img src="img/campus.png" width="116" height="101">
+            </a>
+        </div>
            
     <section>
     <h2>AUTORES DE LA FASE COLABORATIVA</h2>
@@ -136,9 +138,60 @@
                      </figure>
                      </td>
                     </tr>
-                 
                     
-                    
+                   
+                    <tr>
+                     
+                     <td align="left">
+
+                        <ul class="id_l_aut"><h4>Francisco Javier Mejia Plata:</h4>
+                             <li class="id_l_l_aut_t">Codigo: 79865353</li>
+                             <li class="id_l_l_aut_t">Programa: Ingenieria de Sistemas. Cead Bogotà-José Acevedo y Gómez.</li>
+                             <li class="id_l_l_aut_t">Correo electrónico: mejia_francisco@hotmail.com</li>
+                             <li class="id_l_l_aut_t">Usuario Skype: francisco.mejia.plata</li>
+                        </ul>
+                     </td>
+
+                     <td>
+                     <figure>
+                        <img class="imagenfoto" src="img/foto_pendiente.jpg" id="imagen2" alt="xxxxxxx">
+                     </figure>
+                     </td>
+                    </tr>
+                     <tr>
+                     
+                     <td align="left">
+                         <ul class="id_l_aut"><h4>Freddy Puentes Puentes:</h4>
+                       
+                            <li class="id_l_l_aut_t">Codigo: xxxxx</li>
+                            <li class="id_l_l_aut_t">Programa: Ingenieria de Sistemas. Cead Bogotà-José Acevedo y Gómez.</li>
+                            <li class="id_l_l_aut_t">Correo electrónico: XXXXXX</li>
+                            <li class="id_l_l_aut_t">Usuario Skype: XXXXXX</li>
+                        </ul>
+                     </td>
+                     <td>
+                     <figure>
+                        <img class="imagenfoto" src="img/foto_pendiente.jpg" id="imagen3" alt="xxxxxxx">
+                     </figure>
+                     </td>
+                    </tr>
+                       
+                     <td align="left">
+                         <ul class="id_l_aut"><h4>Nelson Barrera:</h4>
+                        
+                            <li class="id_l_l_aut_t">Codigo: xxxxx</li>
+                            <li class="id_l_l_aut_t">Programa: Ingenieria de Sistemas. Cead Bogotà-José Acevedo y Gómez.</li>
+                            <li class="id_l_l_aut_t">Correo electrónico: XXXXXX</li>
+                            <li class="id_l_l_aut_t">Usuario Skype: XXXXXX</li>
+                          </ul>
+                     </td>
+                     
+                     <td>
+                     <figure>
+                        <img class="imagenfoto" src="img/foto_pendiente.jpg" id="imagen4" alt="xxxxxxx">
+                     </figure>
+                     </td>
+                    </tr>
                   </table>
       			</article>
             </div>
