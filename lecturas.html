@@ -107,21 +107,27 @@
             </div>
      </nav>
     <!-- seccion del contenido de la pagina -->
-    <section id="seccion"> 
+    <section  class="sctnsola"> 
     
 
       <h2>LECTURAS</h2> 
 
+<!-- Cuadro total -->
       <div id="agrupar">
        <!-- Primera columna -->
+       <div class="clssart1">
            <article class="clssart1">
-                     <header class="clsshdr2"><hgroup><h1 class="text1">Nombre de la unidad</h1> </hgroup></header>
+                     <header class="clsshdr1"><hgroup>
+                     <h1 class="text1">Nombre de la unidad</h1> </hgroup>
+                     </header>
                     <p class="txtcol">UNIDAD 1. <br>Generalidades sobre Lenguaje C++</p>        
-    			 </article>
+           </article>
+       </div>
         <!-- segunda columna -->
         <!-- primera seccion segunda columna -->
-           <article class="clssart1">
-                    <header class="clsshdr2">
+        <div class="clssart1">
+           <article>
+                    <header class="clsshdr1">
                       <hgroup>
                         <h1 class="text1">Contenidos de aprendizaje</h1> 
                       </hgroup>
@@ -132,41 +138,44 @@
                           <li>Estructura if</li>
                           <li>Estructura switch</li>
                      </ul>
-<!-- segunda seccion, segunda columna -->
-                   <article class="clssart2">
-                     <p class="txtcol"> Estructuras Repetitivas</p>
-                       <ul>
-                         <li>Estructura Mientras (while)</li>
-                         <li>Estructura hacer-mientras (do-while)</li>
-                         <li>Estructura para (for)</li>
-                       </ul> 
-                   </article>
-<!-- tercera seccion segunda columna -->
-                   <article class="clssart2">
-                       <p class="txtcol">Funciones</p>
-                       <ul>
-                         <li>Declaración de Funciones</li>
-                         <li>Paso de parámetros</li>
-                         <li>Paso por Valor</li>
-                         <li>Paso por Referencia</li>
-                         <li>Recursividad</li>
-                       </ul>
-                  </article>     
-          </article>
+            </article>
+       
+            <!-- segunda seccion, segunda columna -->
+           
+            <article class="clssart2">
+                       <p class="txtcol"> Estructuras Repetitivas</p>
+                         <ul>
+                           <li>Estructura Mientras (while)</li>
+                           <li>Estructura hacer-mientras (do-while)</li>
+                           <li>Estructura para (for)</li>
+                         </ul> 
+            </article>
+          <!-- tercera seccion segunda columna -->
+             <article class="clssart2">
+                         <p class="txtcol">Funciones</p>
+                         <ul>
+                           <li>Declaración de Funciones</li>
+                           <li>Paso de parámetros</li>
+                           <li>Paso por Valor</li>
+                           <li>Paso por Referencia</li>
+                           <li>Recursividad</li>
+                         </ul>
+            </article>       
+        </div>
 
-<!-- tercera columna -->
-      
-      <article class="clssart1">
+        <!-- tercera columna -->
+         <article class="clssart3">
                         <header class="clsshdr2">
                         <hgroup>
-                          <h1 class="text1">Referencias Bibliográficas Requeridas
+                              <h1 class="text1">
+                                 Referencias Bibliográficas Requeridas
                               </h1>
                        </hgroup>
                        </header>
 
                        <p class="txtcol"> (Incluye: Libros textos, web links, revistas científicas </p>
-                       <ul>
-                         <li>
+                       <ul class="clss_l_aut">
+                         <li class="clss_l_aut">
                            Oviedo Regino, Efrain M. Lógica de Programación. Estructura secuencial <mark> (pag. 57 a 64)</mark>Disponible en
                             <a href=" http://books.google.com.co/books?id=Z_n5lbyJfrQC&printsec=frontcover&hl=es#v=onepage&q&f=false">
                               http://books.google.com.co/
@@ -174,9 +183,10 @@
                               &printsec=frontcover&hl=
                               es#v=onepage&q&f=false
                             </a>
+                             <p><span></span></p>
                          </li>
-                         <br>
-                         <li> Peña Basurto, Marco A. & otros. Introducción a la Programación en C. Tipos de datos <mark>pag. 41 a 47)</mark> Disponible en <a href=" http://books.google.com.co/books?hl=es&lr=&id=0JNZ0G7gv5IC&oi=fnd&pg=PR7&dq=lenguaje+de+programacion+c&ots=KezSD8jrMV&sig=jbpTFjnwseSAAm0a2_u_imsl3xo#v=onepage&q=lenguaje%20de%20programacion%20c&f=fals">
+                      
+                         <li class="clss_l_aut"> Peña Basurto, Marco A. & otros. Introducción a la Programación en C. Tipos de datos <mark>pag. 41 a 47)</mark> Disponible en <a href=" http://books.google.com.co/books?hl=es&lr=&id=0JNZ0G7gv5IC&oi=fnd&pg=PR7&dq=lenguaje+de+programacion+c&ots=KezSD8jrMV&sig=jbpTFjnwseSAAm0a2_u_imsl3xo#v=onepage&q=lenguaje%20de%20programacion%20c&f=fals">
                            
                          http://books.google.com.co/
                          books?hl=es&lr=&id=0JNZ
@@ -191,29 +201,35 @@
                          </a>
                          </li>
                        </ul>
-
            </article>
-           <!-- salto de unidad -->
-          <p style="clear: left;"><span></span></p>
-          
-          <!-- segunda unidad -->
-          <div id="agrupar2">
+        </div>  
+
+        <!-- segunda unidad -->
+          <div id="agrupar">
           <!-- primera columna -->
        
-              <div id="agrupar">
-               <article class="clssart3">
-                     
-               <header class="clsshdr2"><hgroup><h1 class="text1">Nombre de la unidad</h1> </hgroup></header>
+              <div class="clssart1">
+              <!-- articulo con clase independiente para cambiar alto y bordes -->
+               <article>                     
+                    <header class="clsshdr1">
+                    <hgroup>
+                    <h1 class="text1">Nombre de la unidad</h1> 
+                    </hgroup>
+                    </header>
                         <p class="txtcol">UNIDAD 2. <br>Arreglos y estructuras en C++</p>        
                </article>
-              <!-- segunda columna -->
-           <article class="clssart3">
-                    <header class="clsshdr2">
-                      <hgroup>
-                        <h1 class="text1">Contenidos de aprendizaje</h1> 
-                      </hgroup>
-                    </header>
+              </div>
 
+            <!-- segunda seccion segunda columna -->
+            <div class="clssart1">
+                <article>
+                    <header class="clsshdr1">
+                    <hgroup>
+                        <h1 class="text1">Contenidos de aprendizaje</h1> 
+                    </hgroup>
+                    </header>
+                
+                    <article class="clssart2">
                      <p class="txtcol"> Arreglos y cadenas</p>
                       <ul>
                           <li>Arreglos unidimensionales y bidimensionales</li>
@@ -221,6 +237,7 @@
                           <li>Almacenamiento de Arrays</li>
                           <li>Cadena de Caracteres</li>
                      </ul>
+                   </article>
 
                    <article class="clssart2">
                      <p class="txtcol">Estructuras</p>
@@ -231,20 +248,21 @@
                        </ul> 
                    </article>
                       
-          </article>
-
+                </article>
+          </div>
       <!-- tercera columna -->
 
-      <article class="clssart3">
-                        <header class="clsshdr2">
-                        <hgroup>
-                          <h1 class="text1">Referencias Bibliográficas Requeridas
-                              </h1>
-                       </hgroup>
-                       </header>
+          <article class="clssart3">
+                          <header class="clsshdr2">
+                          <hgroup>
+                            <h1 class="text1">
+                            Referencias Bibliográficas Requeridas
+                                </h1>
+                           </hgroup>
+                          </header>
 
                        <p class="txtcol"> (Incluye: Libros textos, web links, revistas científicas </p>
-                       <ul>
+                       <ul class="clss_l_aut">
                          <li class="clss_l_aut">
                            Peña Basurto, Marco A. & otros. Introducción a la Programación en C. Construcciones condicionales <mark> Pag (23 a 31).</mark>Disponible en
                             <a href="http://books.google.com.co/books?hl=es&lr=&id=0JNZ0G7gv5IC&oi=fnd&pg=PR7&dq=lenguaje+de+programacion+c&ots=KezSD8jrMV&sig=jbpTFjnwseSAAm0a2_u_imsl3xo#v=onepage&q=lenguaje%20de%20programacion%20c&f=false">
@@ -257,7 +275,7 @@
                               o#v=onepage&q=lenguaje%2
                               0de%20programacion%20c&f
                               =false
-                            </a>
+                            </a><br>
                          </li>
 
                           <br>
@@ -270,7 +288,7 @@
                               tivas-estructura-simple
                             </a>
                          </li>
- <br>
+                          <br>
                           <li class="clss_l_aut">
                            Oviedo Regino, Efrain M. Lógica de Programación . Estructuras repetitivas <mark> (pag. 89 a 135).</mark>Disponible en
                             <a href="http://books.google.com.co/books?id=Z_n5lbyJfrQC&printsec=frontcover&hl=es#v=onepage&q&f=false">
@@ -296,37 +314,109 @@
                          </a>
                          </li>
                        </ul>
-                        </article>
-          </div>
+             </article>
+         
        </div>   
-    </div>
-  
-    
-    </section>
-     <aside>
-                <div id="apDiv5">
-                <div id="apDiv11">Nuestra UNAD</div>
-                </div>
-                <div id="apDiv6"><span style="text-align: justify;">
-                <iframe src='js/slider.html' width='260' height='180' frameborder='0'></iframe>    
-                </span>
-      			</div>
-              	<div id="apDiv7">
-                <div id="apDiv12">Ubicación Sede Nacional</div>
-      			</div>
-      			<div id="apDiv8">
-              <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15908.191419159031!2d-74.0975768!3d4.5854329!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xc1c38a35fe03bf87!2sUNAD+UNIVERSIDAD+NACIONAL+ABIERTA+Sede+Jos%C3%A9+Celestino+Mutis!5e0!3m2!1ses!2sco!4v1475599261440" width="260" height="180" frameborder="0" style="border:0" allowfullscreen>
-              
-            </iframe></div>
-              <div id="apDiv15"></div>
-              <div id="apDiv16">Nuestra ECBTI</div>
-      <div id="apDiv18">
-          <iframe width="260" height="180" src="https://www.youtube.com/embed/Z-rfSPH3ZQA" frameborder="0" allowfullscreen>
-            
-          </iframe>
+   
+  <!-- segunda unidad -->
+          <div id="agrupar">
+          <!-- primera columna -->
+       
+            <div class="clssart1">
+              <!-- articulo con clase independiente para cambiar alto y bordes -->
+               <article>
+                    <header class="clsshdr1">
+                      <hgroup>
+                        <h1 class="text1">Nombre de la unidad</h1>
+                      </hgroup>
+                    </header>
+                        <p class="txtcol">UNIDAD 3. <br/>Unidad 3. Ordenación y Búsqueda</p>       
+               </article>
+             </div>
+
+      <!-- segunda columna -->
+              <div class="clssart1"> 
+                <article>
+                      <header class="clsshdr1">
+                        <hgroup>
+                          <h1 class="text1">Contenidos de aprendizaje</h1> 
+                        </hgroup>
+                    </header>
+                  
+                  <article class="clssart2">
+                     <p class="txtcol"> Ordenación</p>
+                      <ul>
+                          <li>Métodos de Intercambio</li>
+                          <li>Ordenación por Inserción</li>
+                          <li>Ordenación por Selección</li>
+                          <li>Método de Shell</li>
+                          <li>Método de ordenación rápida</li>
+                     </ul>
+                   </article>
+
+                   <article class="clssart2">
+                     <p class="txtcol">Búsqueda</p>
+                       <ul>
+                         <li>Búsqueda Secuencial</li>
+                         <li>Búsqueda Binaria</li>
+                         <li>Búsqueda Hasting</li>
+                       </ul> 
+                   </article>
+             </article>
       </div>
-    	</aside>
-		<Footer>
+
+      <!-- tercera columna -->
+      <article class="clssart3">
+                        <header class="clsshdr2">
+                          <hgroup>
+                            <h1 class="text1">
+                                Referencias Bibliográficas Requeridas
+                                </h1>
+                         </hgroup>
+                       </header>
+
+
+
+                       <p class="txtcol"> (Incluye: Libros textos, web links, revistas científicas </p>
+                       <ul class="clss_l_aut">
+                         <li class="clss_l_aut">
+                           Kernigham, Brian W. Rirchie, Dennis M. El lenguaje de Programación C. Funciones y la estructura del programa (pag. 75 a 79) <mark> Pag (23 a 31).</mark>Disponible en
+                            <a href="//books.google.com.co/books?id=OpJ_0zpF7jIC&printsec=frontcover&dq=lenguaje+de+programacion+c&hl=es&sa=X&ei=1VtxUobXCdbKsQSwy4H4CQ&ved=0CDQQ6AEwAQ#v=onepage&q=lenguaje%20de%20programacion%20c&f=false">
+                             //books.google.com.co/
+                              books?id=OpJ_0zpF7jIC&
+                              printsec=frontcover&dq=
+                              lenguaje+de+programaci
+                              on+c&hl=es&sa=X&ei=1V
+                              txUobXCdbKsQSwy4H4CQ&
+                              ved=0CDQQ6AEwAQ#v=one
+                              page&q=lenguaje%20de%
+                              20programacion%20c&f=
+                              false
+                            </a>
+                             <p><span></span></p>
+                         </li>
+
+                          <li class="clss_l_aut">
+                           Orda, Pedro Alonso, Garcia Granada, Fernando & otros. Diseño e implementación de programas en lenguaje C. Estructuras. <mark>(pag. 264 a 268)</mark>
+                            <a href="http://books.google.com.co/books?id=LFfhjnmEdyUC&pg=PA8&dq=lenguaje+de+programacion+c&hl=es&sa=X&ei=1VtxUobXCdbKsQSwy4H4CQ&ved=0CFAQ6AEwBg#v=onepage&q=lenguaje%20de%20programacion%20c&f=false">
+                             http://books.google.
+                             com.co/books?id=LFfh
+                             jnmEdyUC&pg=PA8&dq=l
+                             enguaje+de+programac
+                             ion+c&hl=es&sa=X&ei=
+                             1VtxUobXCdbKsQSwy4H4
+                             CQ&ved=0CFAQ6AEwBg#v
+                             =onepage&q=lenguaje%
+                             20de%20programacion%
+                             20c&f=false
+                            </a>
+                         </li>
+                       </ul>
+             </article>
+       </div>   
+
+    </section>
+   	<Footer>
           <div id="apDiv25">Para uso de la Universidad Nacional Abierta y a Distancia UNAD</div>
           <div id="apDiv26">Elaborado por: Luis Fernando Jaramillo Hernández, estudiante del programa Ing. de Sistemas </div>
 		  <div id="apDiv13"><img src="img/logoUNADgrisInferior.png" width="225" height="41"></div>

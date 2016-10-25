@@ -11,6 +11,10 @@
         <link rel="stylesheet" href="css/normalize.css">
         <link href='http://fonts.googleapis.com/css?family=arial' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" href="css/style.css">
+
+           <script src="js/modernizr.js"></script>   
+    <script src="js/prefixfree.min.js"></script>
+    <script src="js/jquery-2.1.1.js"></script> 
      </head>
     <body>	
         <div id="contenidos">
@@ -75,10 +79,10 @@
                             <img src="img/twitter_aqu_32.png" class="menu" title="Twitter" alt="" />
                       </a>
         
-                 </div> 
-            
+                 </div>
+
                   <div id="apDiv3">    
-               	    <form method="get" action="http://www.google.es/search">
+                    <form method="get" action="http://www.google.es/search">
                         <input type="hidden" name="ie" value="UTF-8" />
                         <input type="hidden" name="oe" value="UTF-8" />
                         <input type="text" id="s" name="q" value="" size="12" />
@@ -90,35 +94,42 @@
                                <input type="radio" name="sitesearch" value="int" /> Internet
                                <input type="radio" name="sitesearch" value="https://estudios.unad.edu.co/ingenieria-de-sistemas" checked="checked" />ECBTI 
                             </div>
- 
                    </form>
                 </div>
              </nav>
-            <div id="apDiv14"><a href="https://campus0a.unad.edu.co/campus0/login/index.php" target="_blank"><	img src="img/campus.png" width="116" height="101"></a>
-            </div>
-    <section>
+            <div id="apDiv14"><a href="https://campus0a.unad.edu.co/campus0/login/index.php" target="_blank"><img src="img/campus.png" width="116" height="101">
+            </a>
+        </div>
+    <section  class="sctnsola">
    
       <h2>LECTURAS UNIDAD 3</h2> 
 
        <!-- segunda unidad -->
-          <div id="agrupar20">
+          <div id="agrupar">
           <!-- primera columna -->
        
-              <div id="agrupar21">
+            <div class="clssart1">
               <!-- articulo con clase independiente para cambiar alto y bordes -->
-               <article class="clssart3">
-                     
-               <header class="clsshdr2"><hgroup><h1 class="text1">Nombre de la unidad</h1> </hgroup></header>
-                        <p class="txtcol">UNIDAD 3. <br>Unidad 3. Ordenación y Búsqueda</p>        
+               <article>
+               			<header class="clsshdr1">
+	               			<hgroup>
+	               				<h1 class="text1">Nombre de la unidad</h1>
+	               			</hgroup>
+               			</header>
+                        <p class="txtcol">UNIDAD 3. <br/>Unidad 3. Ordenación y Búsqueda</p>       
                </article>
-             
-           <article class="clssart3">
-                    <header class="clsshdr2">
-                      <hgroup>
-                        <h1 class="text1">Contenidos de aprendizaje</h1> 
-                      </hgroup>
-                    </header>
+             </div>
 
+      <!-- segunda columna -->
+              <div class="clssart1"> 
+           			<article>
+	                    <header class="clsshdr1">
+	                      <hgroup>
+	                        <h1 class="text1">Contenidos de aprendizaje</h1> 
+	                      </hgroup>
+                    </header>
+                  
+                  <article class="clssart2">
                      <p class="txtcol"> Ordenación</p>
                       <ul>
                           <li>Métodos de Intercambio</li>
@@ -127,6 +138,7 @@
                           <li>Método de Shell</li>
                           <li>Método de ordenación rápida</li>
                      </ul>
+                   </article>
 
                    <article class="clssart2">
                      <p class="txtcol">Búsqueda</p>
@@ -136,104 +148,70 @@
                          <li>Búsqueda Hasting</li>
                        </ul> 
                    </article>
-  
-
-
-          </article>
+         		 </article>
+			</div>
 
       <!-- tercera columna -->
-
       <article class="clssart3">
                         <header class="clsshdr2">
 	                        <hgroup>
-	                          <h1 class="text1">Referencias Bibliográficas Requeridas
+	                          <h1 class="text1">
+	                          		Referencias Bibliográficas Requeridas
 	                              </h1>
 	                       </hgroup>
                        </header>
 
+
+
                        <p class="txtcol"> (Incluye: Libros textos, web links, revistas científicas </p>
                        <ul class="clss_l_aut">
                          <li class="clss_l_aut">
-                           Peña Basurto, Marco A. & otros. Introducción a la Programación en C. Construcciones condicionales <mark> Pag (23 a 31).</mark>Disponible en
-                            <a href="http://books.google.com.co/books?hl=es&lr=&id=0JNZ0G7gv5IC&oi=fnd&pg=PR7&dq=lenguaje+de+programacion+c&ots=KezSD8jrMV&sig=jbpTFjnwseSAAm0a2_u_imsl3xo#v=onepage&q=lenguaje%20de%20programacion%20c&f=false">
-                              http://books.google.com.co
-                              /books?hl=es&lr=&id=0JNZ0G
-                              7gv5IC&oi=fnd&pg=PR7&dq=
-                              lenguaje+de+programacion
-                              +c&ots=KezSD8jrMV&sig=jb
-                              pTFjnwseSAAm0a2_u_imsl3x
-                              o#v=onepage&q=lenguaje%2
-                              0de%20programacion%20c&f
-                              =false
-                            </a><br>
+                           Kernigham, Brian W. Rirchie, Dennis M. El lenguaje de Programación C. Funciones y la estructura del programa (pag. 75 a 79) <mark> Pag (23 a 31).</mark>Disponible en
+                            <a href="//books.google.com.co/books?id=OpJ_0zpF7jIC&printsec=frontcover&dq=lenguaje+de+programacion+c&hl=es&sa=X&ei=1VtxUobXCdbKsQSwy4H4CQ&ved=0CDQQ6AEwAQ#v=onepage&q=lenguaje%20de%20programacion%20c&f=false">
+                             //books.google.com.co/
+                              books?id=OpJ_0zpF7jIC&
+                              printsec=frontcover&dq=
+                              lenguaje+de+programaci
+                              on+c&hl=es&sa=X&ei=1V
+                              txUobXCdbKsQSwy4H4CQ&
+                              ved=0CDQQ6AEwAQ#v=one
+                              page&q=lenguaje%20de%
+                              20programacion%20c&f=
+                              false
+                            </a>
+                             <p><span></span></p>
                          </li>
 
-                          <br>
                           <li class="clss_l_aut">
-                           Lobos, Maria Elena de. Aprende a Programar. Estructuras selectivas. Disponible en
-                            <a href="http://www.emagister.com/curso-aprende-programar/tipos-estructuras-selectivas-estructura-simple">
-                              http://www.emagister.com
-                              /curso-aprende-programar
-                              /tipos-estructuras-selec
-                              tivas-estructura-simple
+                           Orda, Pedro Alonso, Garcia Granada, Fernando & otros. Diseño e implementación de programas en lenguaje C. Estructuras. <mark>(pag. 264 a 268)</mark>
+                            <a href="http://books.google.com.co/books?id=LFfhjnmEdyUC&pg=PA8&dq=lenguaje+de+programacion+c&hl=es&sa=X&ei=1VtxUobXCdbKsQSwy4H4CQ&ved=0CFAQ6AEwBg#v=onepage&q=lenguaje%20de%20programacion%20c&f=false">
+                             http://books.google.
+                             com.co/books?id=LFfh
+                             jnmEdyUC&pg=PA8&dq=l
+                             enguaje+de+programac
+                             ion+c&hl=es&sa=X&ei=
+                             1VtxUobXCdbKsQSwy4H4
+                             CQ&ved=0CFAQ6AEwBg#v
+                             =onepage&q=lenguaje%
+                             20de%20programacion%
+                             20c&f=false
                             </a>
-                         </li>
- <br>
-                          <li class="clss_l_aut">
-                           Oviedo Regino, Efrain M. Lógica de Programación . Estructuras repetitivas <mark> (pag. 89 a 135).</mark>Disponible en
-                            <a href="http://books.google.com.co/books?id=Z_n5lbyJfrQC&printsec=frontcover&hl=es#v=onepage&q&f=false">
-                              http://books.google.com.co
-                              /books?id=Z_n5lbyJfrQC&pri
-                              ntsec=frontcover&hl=es#v=o
-                              nepage&q&f=false
-                            </a>
-                         </li>
-                          
-
-                         <br>
-                         <li class="clss_l_aut"> Peña Basurto, Marco A. & otros. Introducción a la Programación en C. Tipos de datos <mark> (pag. 33 a 39). </mark> Disponible en <a href="http://books.google.com.co/books?hl=es&lr=&id=0JNZ0G7gv5IC&oi=fnd&pg=PR7&dq=lenguaje+de+programacion+c&ots=KezSD8jrMV&sig=jbpTFjnwseSAAm0a2_u_imsl3xo#v=onepage&q=lenguaje%20de%20programacion%20c&f=false">
-                         http://books.google.com
-                         .co/books?hl=es&lr=&id=
-                         0JN Z0G7gv5IC&oi=fnd&pg
-                         =PR7&dq=lenguaje+de+pro
-                         gramacion+c&ots=KezSD8j
-                         rMV&sig=jbpTFjnwseSAAm0
-                         a2_u_imsl3xo#v=onepage&
-                         q=lenguaje%20de%20prog
-                         ramacion%20c&f=false
-                         </a>
                          </li>
                        </ul>
              </article>
-          </div>
        </div>   
-   
-  
+
     </section>
-    <aside> 
-                <div id="apDiv5">
-                <div id="apDiv11">Nuestra UNAD</div>
-                </div>
-                <div id="apDiv6"><span style="text-align: justify;">
-                <iframe src='js/slider.html' width='260' height='180' frameborder='0'></iframe>    
-                </span>
-      			</div>
-              	<div id="apDiv7">
-                <div id="apDiv12">Ubicación Sede Nacional</div>
-      			</div>
-      			<div id="apDiv8"><iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15908.191419159031!2d-74.0975768!3d4.5854329!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xc1c38a35fe03bf87!2sUNAD+UNIVERSIDAD+NACIONAL+ABIERTA+Sede+Jos%C3%A9+Celestino+Mutis!5e0!3m2!1ses!2sco!4v1475599261440" width="260" height="180" frameborder="0" style="border:0" allowfullscreen></iframe></div>
-              <div id="apDiv15"></div>
-              <div id="apDiv16">Nuestra ECBTI</div>
-      <div id="apDiv18"><iframe width="260" height="180" src="https://www.youtube.com/embed/Z-rfSPH3ZQA" frameborder="0" allowfullscreen></iframe></div>
-    	</aside>
+
 		<Footer>
-          <div id="apDiv25">Para uso de la Universidad Nacional Abierta y a Distancia UNAD</div>
-          <div id="apDiv26">Elaborado por: Luis Fernando Jaramillo Hernández, estudiante del programa Ing. de Sistemas </div>
-		  <div id="apDiv13"><img src="img/logoUNADgrisInferior.png" width="225" height="41"></div>
+          <div id="apDiv25">Para uso de la Universidad Nacional Abierta y a Distancia UNAD
+          </div>
+          <div id="apDiv26">Elaborado por: Luis Fernando Jaramillo Hernández, estudiante del programa Ing. de Sistemas 
+          </div>
+		  <div id="apDiv13">
+		 	 <img src="img/logoUNADgrisInferior.png" width="225" height="41" alt="">
+		  </div>
 		  <div id="apDiv27">CEAD Dosquebradas - 2016</div>
     	</Footer>
    </body>
-    <script src="js/modernizr.js"></script>   
-    <script src="js/prefixfree.min.js"></script>
-    <script src="js/jquery-2.1.1.js"></script>   
 </html>
